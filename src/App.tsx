@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import '@tremor/react/dist/esm/tremor.css'
+import Accordion from './Components/Accordion';
+import { DropdownControlledExample } from './Components/DropDown';
+import { ToggleBasicExample } from './Components/Toggle';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from './Layout';
+import General from './Charts/General';
+import LineChart from './Charts/LineChart';
+import FunnelChart from './Charts/FunnelChart';
+import WaterFallChart from './Charts/WaterFallChart';
+import Error from './Charts/Error';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<General />} />
+            <Route path="LineChart" element={<LineChart />} />
+            <Route path="FunnelChart" element={<FunnelChart />} />
+            <Route path="WaterdfsdFallChart" element={<WaterFallChart />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </BrowserRouter> */}
+      <Accordion />
     </div>
   );
 }

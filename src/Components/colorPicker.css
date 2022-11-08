@@ -1,0 +1,23 @@
+.colorPicker {
+    background-color: rgba(216, 207, 207, 0.438);
+    height: 10vh;
+    width: 13vh;
+    box-shadow: .5vh .5vh 1vh rgba(0, 0, 0, 0.385);
+}
+.colorPicker:hover{
+    transition: all 0.1s;
+    transform: scale(0.98)
+}
+.color {
+    background-color: none;
+    height: 6vh;
+    width: 13vh;    
+    cursor: pointer;
+}
+
+.hexaCode {
+    display: flex;
+    justify-content: center;
+    line-height: 4vh;
+    font-weight: bold;
+}

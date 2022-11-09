@@ -137,7 +137,10 @@
   },
   "annotationSettings": {
     "isOpen": false,
-    "position": [0, 0],
+    "position": [
+      0,
+      0
+    ],
     "target": "",
     "id": "",
     "isEdit": false,
@@ -649,7 +652,10 @@
     "isPercent": false,
     "topNPercent": 20,
     "othersLabel": "Other",
-    "labelSuffix": ["category", "itemsCount"],
+    "labelSuffix": [
+      "category",
+      "itemsCount"
+    ],
     "isDefaultValue": true,
     "isResetValue": false
   },
@@ -1659,7 +1665,10 @@
     "isPercent": false,
     "topNPercent": 20,
     "othersLabel": "Other",
-    "labelSuffix": ["category", "itemsCount"],
+    "labelSuffix": [
+      "category",
+      "itemsCount"
+    ],
     "isDefaultValue": true,
     "isResetValue": false
   },
@@ -1719,7 +1728,10 @@
     "isPercent": false,
     "topNPercent": 20,
     "othersLabel": "Other",
-    "labelSuffix": ["category", "itemsCount"],
+    "labelSuffix": [
+      "category",
+      "itemsCount"
+    ],
     "isDefaultValue": true,
     "isResetValue": false
   },
@@ -1878,7 +1890,10 @@
       "isPercent": false,
       "topNPercent": 20,
       "othersLabel": "Other",
-      "labelSuffix": ["category", "itemsCount"],
+      "labelSuffix": [
+        "category",
+        "itemsCount"
+      ],
       "isDefaultValue": true
     },
     "averagePanel": {

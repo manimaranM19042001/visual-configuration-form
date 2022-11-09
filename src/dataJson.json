@@ -1,0 +1,196 @@
+[
+    {
+        "Title": "X - Axis",
+        "Fields": [
+            {
+                "id": "label_enabled",
+                "type": "toggle",
+                "value": true,
+                "title": "Enabled"
+            },
+            {
+                "id": "label_fontColor",
+                "type": "color",
+                "value": "#605E5C",
+                "title": "Font Color"
+            },
+            {
+                "id": "label_fontSize",
+                "type": "number",
+                "title": "Font Size",
+                "value": null
+            },
+            {
+                "id": "label_display_type",
+                "type": "selector",
+                "options": [
+                    {
+                        "option_value": "select an option"
+                    },
+                    {
+                        "option_value": "saab"
+                    },
+                    {
+                        "option_value": "mercedes"
+                    },
+                    {
+                        "option_value": "audi"
+                    }
+                ],
+                "title": "Display"
+            },
+            {
+                "id": "label_density_type",
+                "type": "selector",
+                "options": [
+                    {
+                        "option_value": "select an option"
+                    },
+                    {
+                        "option_value": "saab"
+                    },
+                    {
+                        "option_value": "mercedes"
+                    },
+                    {
+                        "option_value": "audi"
+                    }
+                ],
+                "title": "Density"
+            },
+            {
+                "id": "label_step",
+                "type": "number",
+                "title": "Step",
+                "value": 2
+            },
+            {
+                "id": "label_rotation",
+                "type": "slider",
+                "title": "Rotation",
+                "value": 0
+            },
+            {
+                "id": "label_interval",
+                "type": "number",
+                "title": "Interval",
+                "value": 1
+            },
+            {
+                "id": "label_wordWrap",
+                "type": "toggle",
+                "title": "Word Wrap",
+                "value": true
+            },
+            {
+                "id": "label_maxHeight",
+                "type": "number",
+                "title": "Max-Height",
+                "value": 30
+            },
+            {
+                "id": "label_maxWidth",
+                "type": "number",
+                "title": "Max-Width",
+                "value": 25
+            },
+            {
+                "id": "label_padding",
+                "type": "number",
+                "title": "Padding",
+                "value": null
+            },
+            {
+                "id": "label_offset",
+                "type": "number",
+                "title": "Offset",
+                "value": 0
+            },
+            {
+                "id": "title_enabled",
+                "type": "toggle",
+                "title": "Enabled",
+                "value": false
+            },
+            {
+                "id": "title_fontColor",
+                "type": "color",
+                "title": "Font-Color",
+                "value": "#605E5C"
+            },
+            {
+                "id": "title_fontSize",
+                "type": "number",
+                "title": "Font-Size",
+                "value": null
+            },
+            {
+                "id": "title_text",
+                "type": "text",
+                "title": "Text",
+                "value": ""
+            },
+            {
+                "id": "categoryWidth",
+                "type": "selector",
+                "options": [
+                    {
+                        "option_value": "select an option"
+                    },
+                    {
+                        "option_value": "saab"
+                    },
+                    {
+                        "option_value": "mercedes"
+                    },
+                    {
+                        "option_value": "audi"
+                    }
+                ],
+                "title": "Category Width"
+            },
+            {
+                "id": "innerPadding",
+                "type": "number",
+                "title": "Inner Padding",
+                "value": 30
+            },
+            {
+                "id": "maxHeight",
+                "type": "number",
+                "title": "Max-Height",
+                "value": null
+            },
+            {
+                "id": "minWidth",
+                "type": "number",
+                "title": "Min-Width",
+                "value": 18
+            },
+            {
+                "id": "axisLineWidth",
+                "type": "number",
+                "title": "Axis-Line-Width",
+                "value": 1
+            },
+            {
+                "id": "maxCategoryCount",
+                "type": "number",
+                "title": "Max-Category Count",
+                "value": null
+            },
+            {
+                "id": "offset",
+                "type": "number",
+                "title": "Offset",
+                "value": null
+            },
+            {
+                "id": "isDefaultValue",
+                "type": "toggle",
+                "title": "is Default Value",
+                "value": true
+            }
+        ]
+    }
+]

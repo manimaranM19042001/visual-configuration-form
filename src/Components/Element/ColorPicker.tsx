@@ -1,5 +1,5 @@
 import { FC, ReactElement, useState } from 'react';
-import './colorPicker.css'
+import '../Styles/colorPicker.css'
 import { Flex } from "@tremor/react";
 
 export const ColorPickerComponent: FC<any> = (props: any): ReactElement => {

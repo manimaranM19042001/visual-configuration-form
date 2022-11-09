@@ -1,0 +1,6 @@
+.toggleDiv{
+    width : 11rem;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,8 +1,9 @@
 .colorPicker {
-    background-color: rgba(216, 207, 207, 0.438);
-    height: 10vh;
-    width: 13vh;
+    background-color: rgba(255, 255, 255, 0.559);
+    height: 9vh;
+    width: 22.3vh;
     box-shadow: .5vh .5vh 1vh rgba(0, 0, 0, 0.385);
+    border-radius: 0.5em;
 }
 .colorPicker:hover{
     transition: all 0.1s;
@@ -10,8 +11,9 @@
 }
 .color {
     background-color: none;
-    height: 6vh;
-    width: 13vh;    
+    height: 5vh;
+    width: 22.3vh;    
+    border-radius: 0.5em;
     cursor: pointer;
 }
 
@@ -21,3 +23,4 @@
     line-height: 4vh;
     font-weight: bold;
 }
+

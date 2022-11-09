@@ -1,0 +1,23 @@
+select {
+    width: 11.3rem;
+    height: 30px;
+    border-style: groove;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: white;
+    padding: 2px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.564);
+    border-radius: 0.3em;
+}
+
+option {
+    width: auto;
+    border-style: groove;
+    text-align: left;
+    font-size: 1em;
+    background-color: rgb(212, 236, 239);
+    padding: 2px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.564);
+    border-radius: 0.3em;
+}

@@ -1,6 +1,6 @@
 import { Card, Flex, Text } from '@tremor/react';
 import { FC, ReactElement, useState } from 'react';
-import './RangeCss.css'
+import '../Styles/RangeCss.css'
 
 
 export const RangeComponent: FC<any> = (props:any): ReactElement => {

@@ -1,17 +1,20 @@
 import { FC, ReactElement, useState } from 'react';
 import '../Styles/colorPicker.css'
 import { Flex } from "@tremor/react";
+import { FormContext } from '../../FormContext'
+import { useContext } from 'react'
 
-export const ColorPickerComponent: FC<any> = (props: any): ReactElement => {
-    const [color, setColor] = useState<string>(props.Color)
+export const ColorPickerComponent: FC<any> = ({ title, value, id }): ReactElement => {
+    const { handleChange } = useContext<any>(FormContext)
+
     return (
         <Flex>
-            <h3>{props.Title}</h3>
+            <h3>{title}</h3>
             <div className='colorPicker'>
                 <div className='inputField'>
-                    <input type="color" className='color' value={color} onChange={(event) => setColor(event.target.value)} />
+                    <input type="color" className='color' value={value} onChange={(event) => handleChange(id, event)} />
                 </div>
-                <div className='hexaCode'>{color}</div>
+                <div className='hexaCode'>{value}</div>
             </div>
         </Flex>
     )

@@ -5,7 +5,7 @@
             {
                 "id": "label_enabled",
                 "type": "toggle",
-                "value": true,
+                "value": false,
                 "title": "Enabled"
             },
             {
@@ -25,16 +25,10 @@
                 "type": "selector",
                 "options": [
                     {
-                        "option_value": "select an option"
+                        "option_value": "auto"
                     },
                     {
-                        "option_value": "saab"
-                    },
-                    {
-                        "option_value": "mercedes"
-                    },
-                    {
-                        "option_value": "audi"
+                        "option_value": "manual"
                     }
                 ],
                 "title": "Display"
@@ -42,18 +36,13 @@
             {
                 "id": "label_density_type",
                 "type": "selector",
+                "value": "saab",
                 "options": [
                     {
-                        "option_value": "select an option"
+                        "option_value": "all"
                     },
                     {
-                        "option_value": "saab"
-                    },
-                    {
-                        "option_value": "mercedes"
-                    },
-                    {
-                        "option_value": "audi"
+                        "option_value": "none"
                     }
                 ],
                 "title": "Density"
@@ -68,6 +57,8 @@
                 "id": "label_rotation",
                 "type": "slider",
                 "title": "Rotation",
+                "minValue": 0,
+                "maxValue": 360,
                 "value": 0
             },
             {
@@ -133,18 +124,16 @@
             {
                 "id": "categoryWidth",
                 "type": "selector",
+                "value": "mercedes",
                 "options": [
                     {
-                        "option_value": "select an option"
+                        "option_value": "auto"
                     },
                     {
-                        "option_value": "saab"
+                        "option_value": "fill"
                     },
                     {
-                        "option_value": "mercedes"
-                    },
-                    {
-                        "option_value": "audi"
+                        "option_value": "cover"
                     }
                 ],
                 "title": "Category Width"

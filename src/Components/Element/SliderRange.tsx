@@ -1,20 +1,22 @@
 import { Card, Flex, Text } from '@tremor/react';
 import { FC, ReactElement, useState } from 'react';
 import '../Styles/RangeCss.css'
+import { FormContext } from '../../FormContext'
+import { useContext } from 'react'
 
-
-export const RangeComponent: FC<any> = (props:any): ReactElement => {
-    const [fontHeight, setFontHeight] = useState<number>(props.defaultValue)
+export const RangeComponent: FC<any> = ({ title, id, value, minValue, maxValue, stepValue }): ReactElement => {
+    // const [fontHeight, setFontHeight] = useState<number>(props.defaultValue)
+    const { handleChange } = useContext<any>(FormContext)
     return (
         <>
-                <Flex>
-                    <h3>{props.Title}</h3>
-                    <div className='container'>
-                        <div ><input type="range" min={props.minValue} max={props.maxValue} value={fontHeight} className='slider' onChange={(event) => setFontHeight(Number(event.target.value))} step={props.stepValue}/>
-                        </div>
-                        <div className='numerBox'>{fontHeight}</div>
+            <Flex>
+                <h3>{title}</h3>
+                <div className='container'>
+                    <div ><input type="range" min={minValue} max={maxValue} value={value} className='slider' onChange={(event) => handleChange(id, event)}/>
                     </div>
-                </Flex>
+                    <div className='numerBox'>{value}</div>
+                </div>
+            </Flex>
         </>
     )
 }

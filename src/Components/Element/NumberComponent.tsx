@@ -1,14 +1,15 @@
 import { Flex } from '@tremor/react'
 import { FC, ReactElement, useState } from 'react'
 import '../Styles/NumberComponent.css'
+import { FormContext } from '../../FormContext'
+import { useContext } from 'react'
 
-
-export const NumberComponent: FC<any> = (props:any): ReactElement => {
-    const [number, setNumber] = useState<number>(0)
+export const NumberComponent: FC<any> = ({ title, id, value }): ReactElement => {
+    const { handleChange } = useContext<any>(FormContext)
     return (
         <Flex>
-            <h3>{props.Title}</h3>
-            <input type="number" defaultValue={props.DefaultValue} min={props.minValue} max={props.maxValue} placeholder='Enter your value' onChange={(event) => setNumber(Number(event.target.value))} />
+            <h3>{title}</h3>
+            <input type="number" value={value} placeholder='Enter your value' onChange={event => handleChange(id, event)} />
         </Flex>
     )
 }

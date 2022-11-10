@@ -3,24 +3,23 @@ import { Stack, IStackTokens } from '@fluentui/react/lib/Stack';
 import { Toggle } from '@fluentui/react/lib/Toggle';
 import { Flex } from "@tremor/react";
 import '../Styles/ToggleCss.css'
+import { FormContext } from '../../FormContext'
+import { useContext } from 'react'
 const stackTokens: IStackTokens = { childrenGap: 1 };
-type IToggle={
-    Title :string,
-    onTextValue : string,
-    offTextValue : string,
-    isChecked:boolean,
-    changeFunction:Function
+type IToggle = {
+    Title: string,
+    onTextValue: string,
+    offTextValue: string,
+    isChecked: boolean,
+    changeFunction: Function
 }
-export const ToggleBasicExample: React.FunctionComponent<any> = (props:any) => {
-    // function _onChange(ev: React.MouseEvent<HTMLElement>, checked?: boolean) {
-    //     console.log('toggle is ' + (checked ? 'checked' : 'not checked'));
-    //     return checked
-    // }
+export const ToggleBasicExample: React.FunctionComponent<any> = ({ value, id, title }) => {
+    const { handleChange } = useContext<any>(FormContext)
     return (
         <Flex>
-            <h3>{props.Title}</h3>
+            <h3>{title}</h3>
             <div className='toggleDiv'>
-            <Toggle  defaultChecked={props.Checking} onText={props.onTextValue} offText={props.offTextValue} className='classToggle' onChange={props.changeFunction} />
+                <Toggle defaultChecked={value} onText='ON' offText='Off' className='classToggle' onChange={event => handleChange(id, event)} />
             </div>
         </Flex>
     );

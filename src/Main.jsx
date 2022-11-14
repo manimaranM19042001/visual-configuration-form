@@ -5,11 +5,11 @@ import formJSON from './dataJson.json'
 import Element from './Element'
 import { FormContext } from './FormContext'
 import Accordion from './Accodian/Accordion'
-
+import './Main.css'
 const Main = ({ sourceData, setElements, Element, indexValue }) => {
 
 
-    const { Fields, Title } = sourceData ?? {}
+    const { Fields, Title  } = sourceData ?? {}
     const handleChange = (ide, event) => {
         const newElement = { ...sourceData }
         newElement.Fields.forEach(field => {
@@ -30,7 +30,7 @@ const Main = ({ sourceData, setElements, Element, indexValue }) => {
 
     return (
         <FormContext.Provider value={{ handleChange }}>
-            <div style={{ backgroundColor: 'powderblue', padding: '1rem', marginBottom: '3px' }}>
+            <div className='division'>
                 <Accordion title={Title} content={Fields} />
             </div>
         </FormContext.Provider>

@@ -10,7 +10,7 @@ export const RangeComponent: FC<any> = ({ title, id, value, minValue, maxValue, 
     return (
         <>
             <Flex>
-                <h3>{title}</h3>
+            <h5>{title}</h5>
                 <div className='container'>
                     <div ><input type="range" min={minValue} max={maxValue} value={value} className='slider' onChange={(event) => handleChange(id, event)}/>
                     </div>

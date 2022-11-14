@@ -3,7 +3,7 @@ input[type='number'] {
     border-style: groove;
     text-align: center;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
     background-color: white;
     padding: 2px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.564);

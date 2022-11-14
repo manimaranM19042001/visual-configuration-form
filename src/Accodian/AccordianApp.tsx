@@ -1,6 +1,6 @@
 import React from 'react';
 import Accordion from './Accordion';
-import './App.css'
+// import './App.css'
 import dataJson from '../dataJson.json'
 export const AccordianApp = () => {
   const accordionData = [

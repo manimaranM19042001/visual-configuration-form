@@ -17,7 +17,7 @@ export const ToggleBasicExample: React.FunctionComponent<any> = ({ value, id, ti
     const { handleChange } = useContext<any>(FormContext)
     return (
         <Flex>
-            <h3>{title}</h3>
+            <h5>{title}</h5>
             <div className='toggleDiv'>
                 <Toggle defaultChecked={value} onText='ON' offText='Off' className='classToggle' onChange={event => handleChange(id, event)} />
             </div>

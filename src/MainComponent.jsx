@@ -1,9 +1,10 @@
 import { Card } from '@tremor/react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import { ContextValue } from './ContextValue'
 import formJSON from './dataJson.json'
 import Main from './Main'
 const MainComponent = () => {
-    const [element, setElements] = useState(null)
+    const [element, setElements] = useState({})
     useEffect(() => {
         setElements(formJSON)
     }, [])
@@ -23,7 +24,8 @@ const MainComponent = () => {
         download(JSON.stringify(elementValue), "Group-A-Theme-configuraition.json", "text/plain");
     }
     return (
-        <Card maxWidth='max-w-3xl' >
+        <ContextValue.Provider value={[element, setElements]}>
+        <Card maxWidth="max-w-3xl" >
             {
                 formJSON.map((value, index) => (
                     <Main sourceData={value} key={index} indexValue={index} setElements={setElements} Element={element} />
@@ -31,6 +33,7 @@ const MainComponent = () => {
             }
             <button onClick={onDownload}> <h3>Download theme</h3></button>
         </Card>
+        </ContextValue.Provider>
     )
 }
 

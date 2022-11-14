@@ -9,7 +9,7 @@ export const ColorPickerComponent: FC<any> = ({ title, value, id }): ReactElemen
 
     return (
         <Flex>
-            <h3>{title}</h3>
+            <h5>{title}</h5>
             <div className='colorPicker'>
                 <div className='inputField'>
                     <input type="color" className='color' value={value} onChange={(event) => handleChange(id, event)} />

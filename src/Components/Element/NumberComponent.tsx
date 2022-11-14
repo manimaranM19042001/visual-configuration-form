@@ -8,7 +8,7 @@ export const NumberComponent: FC<any> = ({ title, id, value }): ReactElement => 
     const { handleChange } = useContext<any>(FormContext)
     return (
         <Flex>
-            <h3>{title}</h3>
+            <h5>{title}</h5>
             <input type="number" value={value} placeholder='Enter your value' onChange={event => handleChange(id, event)} />
         </Flex>
     )

@@ -10,7 +10,7 @@ export const TextBoxComponent: FC<any> = ({ title, id, value }): ReactElement =>
 
     return (
         <Flex>
-            <h3>{title}</h3>
+            <h5>{title}</h5>
             <input type="text" minLength={2} maxLength={8} value={value} onChange={(event) => handleChange(id, event)} />
         </Flex>
 

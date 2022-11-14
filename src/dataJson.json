@@ -3,145 +3,147 @@
         "Title": "X - Axis",
         "Fields": [
             {
-                "Title": "Accordian",
+                "id": "enabled",
+                "type": "toggle",
+                "value": false,
+                "title": "Enabled"
+            },
+            {
+                "Title": "Label",
+                "type": "Accordian",
                 "Fields": [
                     {
-                        "id": "label_enabled",
+                        "id": "enabled",
                         "type": "toggle",
                         "value": false,
                         "title": "Enabled"
                     },
                     {
-                        "id": "label_fontColor",
+                        "id": "fontColor",
                         "type": "color",
                         "value": "#FFFFFF",
                         "title": "Font Color"
+                    },
+                    {
+                        "id": "fontSize",
+                        "type": "number",
+                        "title": "Font Size",
+                        "value": 3
+                    },
+                    {
+                        "id": "display_type",
+                        "type": "selector",
+                        "options": [
+                            {
+                                "option_value": "auto"
+                            },
+                            {
+                                "option_value": "manual"
+                            }
+                        ],
+                        "title": "Display"
+                    },
+                    {
+                        "id": "density_type",
+                        "type": "selector",
+                        "value": null,
+                        "options": [
+                            {
+                                "option_value": "all"
+                            },
+                            {
+                                "option_value": "none"
+                            }
+                        ],
+                        "title": "Density"
+                    },
+                    {
+                        "id": "step",
+                        "type": "number",
+                        "title": "Step",
+                        "value": null
+                    },
+                    {
+                        "id": "rotation",
+                        "type": "slider",
+                        "title": "Rotation",
+                        "minValue": 0,
+                        "maxValue": 360,
+                        "value": 0
+                    },
+                    {
+                        "id": "interval",
+                        "type": "number",
+                        "title": "Interval",
+                        "value": null
+                    },
+                    {
+                        "id": "wordWrap",
+                        "type": "toggle",
+                        "title": "Word Wrap",
+                        "value": true
+                    },
+                    {
+                        "id": "maxHeight",
+                        "type": "number",
+                        "title": "Max-Height",
+                        "value": null
+                    },
+                    {
+                        "id": "maxWidth",
+                        "type": "number",
+                        "title": "Max-Width",
+                        "value": null
+                    },
+                    {
+                        "id": "padding",
+                        "type": "number",
+                        "title": "Padding",
+                        "value": null
+                    },
+                    {
+                        "id": "offset",
+                        "type": "number",
+                        "title": "Offset",
+                        "value": null
                     }
                 ]
             },
             {
-                "id": "label_enabled",
-                "type": "toggle",
-                "value": false,
-                "title": "Enabled"
-            },
-            {
-                "id": "label_fontColor",
-                "type": "color",
-                "value": "#FFFFFF",
-                "title": "Font Color"
-            },
-            {
-                "id": "label_fontSize",
-                "type": "number",
-                "title": "Font Size",
-                "value": 3
-            },
-            {
-                "id": "label_display_type",
-                "type": "selector",
-                "options": [
+                "Title": "Title",
+                "type": "Accordian",
+                "Fields": [
                     {
-                        "option_value": "auto"
+                        "id": "enabled",
+                        "type": "toggle",
+                        "value": false,
+                        "title": "Enabled"
                     },
                     {
-                        "option_value": "manual"
-                    }
-                ],
-                "title": "Display"
-            },
-            {
-                "id": "label_density_type",
-                "type": "selector",
-                "value": null,
-                "options": [
-                    {
-                        "option_value": "all"
+                        "id": "fontColor",
+                        "type": "color",
+                        "value": "#FFFFFF",
+                        "title": "Font Color"
                     },
                     {
-                        "option_value": "none"
+                        "id": "fontSize",
+                        "type": "number",
+                        "title": "Font Size",
+                        "value": 3
+                    },
+                    {
+                        "id": "text",
+                        "type": "text",
+                        "title": "Text",
+                        "value": null
                     }
-                ],
-                "title": "Density"
-            },
-            {
-                "id": "label_step",
-                "type": "number",
-                "title": "Step",
-                "value": null
-            },
-            {
-                "id": "label_rotation",
-                "type": "slider",
-                "title": "Rotation",
-                "minValue": 0,
-                "maxValue": 360,
-                "value": 0
-            },
-            {
-                "id": "label_interval",
-                "type": "number",
-                "title": "Interval",
-                "value": null
-            },
-            {
-                "id": "label_wordWrap",
-                "type": "toggle",
-                "title": "Word Wrap",
-                "value": true
-            },
-            {
-                "id": "label_maxHeight",
-                "type": "number",
-                "title": "Max-Height",
-                "value": null
-            },
-            {
-                "id": "label_maxWidth",
-                "type": "number",
-                "title": "Max-Width",
-                "value": null
-            },
-            {
-                "id": "label_padding",
-                "type": "number",
-                "title": "Padding",
-                "value": null
-            },
-            {
-                "id": "label_offset",
-                "type": "number",
-                "title": "Offset",
-                "value": null
-            },
-            {
-                "id": "title_enabled",
-                "type": "toggle",
-                "title": "Enabled",
-                "value": false
-            },
-            {
-                "id": "title_fontColor",
-                "type": "color",
-                "title": "Font-Color",
-                "value": "#FFFFFF"
-            },
-            {
-                "id": "title_fontSize",
-                "type": "number",
-                "title": "Font-Size",
-                "value": null
-            },
-            {
-                "id": "title_text",
-                "type": "text",
-                "title": "Text",
-                "value": null
+                ]
             },
             {
                 "id": "categoryWidth",
                 "type": "selector",
                 "value": null,
+                "title": "Category Width",
                 "options": [
                     {
                         "option_value": "auto"
@@ -152,191 +154,7 @@
                     {
                         "option_value": "cover"
                     }
-                ],
-                "title": "Category Width"
-            },
-            {
-                "id": "innerPadding",
-                "type": "number",
-                "title": "Inner Padding",
-                "value": 30
-            },
-            {
-                "id": "maxHeight",
-                "type": "number",
-                "title": "Max-Height",
-                "value": null
-            },
-            {
-                "id": "minWidth",
-                "type": "number",
-                "title": "Min-Width",
-                "value": null
-            },
-            {
-                "id": "axisLineWidth",
-                "type": "number",
-                "title": "Axis-Line-Width",
-                "value": null
-            },
-            {
-                "id": "maxCategoryCount",
-                "type": "number",
-                "title": "Max-Category Count",
-                "value": null
-            },
-            {
-                "id": "offset",
-                "type": "number",
-                "title": "Offset",
-                "value": null
-            },
-            {
-                "id": "isDefaultValue",
-                "type": "toggle",
-                "title": "is Default Value",
-                "value": true
-            }
-        ]
-    },
-    {
-        "Title": "Y - Axis",
-        "Fields": [
-            {
-                "id": "label_enabled",
-                "type": "toggle",
-                "value": false,
-                "title": "Enabled"
-            },
-            {
-                "id": "label_fontColor",
-                "type": "color",
-                "value": "#FFFFFF",
-                "title": "Font Color"
-            },
-            {
-                "id": "label_fontSize",
-                "type": "number",
-                "title": "Font Size",
-                "value": null
-            },
-            {
-                "id": "label_display_type",
-                "type": "selector",
-                "options": [
-                    {
-                        "option_value": "auto"
-                    },
-                    {
-                        "option_value": "manual"
-                    }
-                ],
-                "title": "Display"
-            },
-            {
-                "id": "label_density_type",
-                "type": "selector",
-                "value": null,
-                "options": [
-                    {
-                        "option_value": "all"
-                    },
-                    {
-                        "option_value": "none"
-                    }
-                ],
-                "title": "Density"
-            },
-            {
-                "id": "label_step",
-                "type": "number",
-                "title": "Step",
-                "value": null
-            },
-            {
-                "id": "label_rotation",
-                "type": "slider",
-                "title": "Rotation",
-                "minValue": 0,
-                "maxValue": 360,
-                "value": 0
-            },
-            {
-                "id": "label_interval",
-                "type": "number",
-                "title": "Interval",
-                "value": null
-            },
-            {
-                "id": "label_wordWrap",
-                "type": "toggle",
-                "title": "Word Wrap",
-                "value": true
-            },
-            {
-                "id": "label_maxHeight",
-                "type": "number",
-                "title": "Max-Height",
-                "value": null
-            },
-            {
-                "id": "label_maxWidth",
-                "type": "number",
-                "title": "Max-Width",
-                "value": null
-            },
-            {
-                "id": "label_padding",
-                "type": "number",
-                "title": "Padding",
-                "value": null
-            },
-            {
-                "id": "label_offset",
-                "type": "number",
-                "title": "Offset",
-                "value": null
-            },
-            {
-                "id": "title_enabled",
-                "type": "toggle",
-                "title": "Enabled",
-                "value": false
-            },
-            {
-                "id": "title_fontColor",
-                "type": "color",
-                "title": "Font-Color",
-                "value": "#FFFFFF"
-            },
-            {
-                "id": "title_fontSize",
-                "type": "number",
-                "title": "Font-Size",
-                "value": null
-            },
-            {
-                "id": "title_text",
-                "type": "text",
-                "title": "Text",
-                "value": null
-            },
-            {
-                "id": "categoryWidth",
-                "type": "selector",
-                "value": null,
-                "options": [
-                    {
-                        "option_value": "auto"
-                    },
-                    {
-                        "option_value": "fill"
-                    },
-                    {
-                        "option_value": "cover"
-                    }
-                ],
-                "title": "Category Width"
+                ]
             },
             {
                 "id": "innerPadding",

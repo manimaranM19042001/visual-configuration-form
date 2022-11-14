@@ -10,7 +10,7 @@ const SelectorComponent = ({ options, title, id, value }) => {
 
     return (
         <Flex>
-            <h3>{title}</h3>
+            <h5>{title}</h5>
             <select onChange={event => handleChange(id, event)}>
                 {options.length > 0 && options.map((option, i) =>
                     <option  value={option.option_value} key={i}>

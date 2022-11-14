@@ -3,6 +3,23 @@
         "Title": "X - Axis",
         "Fields": [
             {
+                "Title": "Accordian",
+                "Fields": [
+                    {
+                        "id": "label_enabled",
+                        "type": "toggle",
+                        "value": false,
+                        "title": "Enabled"
+                    },
+                    {
+                        "id": "label_fontColor",
+                        "type": "color",
+                        "value": "#FFFFFF",
+                        "title": "Font Color"
+                    }
+                ]
+            },
+            {
                 "id": "label_enabled",
                 "type": "toggle",
                 "value": false,
@@ -11,14 +28,14 @@
             {
                 "id": "label_fontColor",
                 "type": "color",
-                "value": "#605E5C",
+                "value": "#FFFFFF",
                 "title": "Font Color"
             },
             {
                 "id": "label_fontSize",
                 "type": "number",
                 "title": "Font Size",
-                "value": null
+                "value": 3
             },
             {
                 "id": "label_display_type",
@@ -36,7 +53,7 @@
             {
                 "id": "label_density_type",
                 "type": "selector",
-                "value": "saab",
+                "value": null,
                 "options": [
                     {
                         "option_value": "all"
@@ -51,7 +68,7 @@
                 "id": "label_step",
                 "type": "number",
                 "title": "Step",
-                "value": 2
+                "value": null
             },
             {
                 "id": "label_rotation",
@@ -65,7 +82,7 @@
                 "id": "label_interval",
                 "type": "number",
                 "title": "Interval",
-                "value": 1
+                "value": null
             },
             {
                 "id": "label_wordWrap",
@@ -77,13 +94,13 @@
                 "id": "label_maxHeight",
                 "type": "number",
                 "title": "Max-Height",
-                "value": 30
+                "value": null
             },
             {
                 "id": "label_maxWidth",
                 "type": "number",
                 "title": "Max-Width",
-                "value": 25
+                "value": null
             },
             {
                 "id": "label_padding",
@@ -95,7 +112,7 @@
                 "id": "label_offset",
                 "type": "number",
                 "title": "Offset",
-                "value": 0
+                "value": null
             },
             {
                 "id": "title_enabled",
@@ -107,7 +124,7 @@
                 "id": "title_fontColor",
                 "type": "color",
                 "title": "Font-Color",
-                "value": "#605E5C"
+                "value": "#FFFFFF"
             },
             {
                 "id": "title_fontSize",
@@ -119,12 +136,12 @@
                 "id": "title_text",
                 "type": "text",
                 "title": "Text",
-                "value": ""
+                "value": null
             },
             {
                 "id": "categoryWidth",
                 "type": "selector",
-                "value": "mercedes",
+                "value": null,
                 "options": [
                     {
                         "option_value": "auto"
@@ -154,13 +171,196 @@
                 "id": "minWidth",
                 "type": "number",
                 "title": "Min-Width",
-                "value": 18
+                "value": null
             },
             {
                 "id": "axisLineWidth",
                 "type": "number",
                 "title": "Axis-Line-Width",
-                "value": 1
+                "value": null
+            },
+            {
+                "id": "maxCategoryCount",
+                "type": "number",
+                "title": "Max-Category Count",
+                "value": null
+            },
+            {
+                "id": "offset",
+                "type": "number",
+                "title": "Offset",
+                "value": null
+            },
+            {
+                "id": "isDefaultValue",
+                "type": "toggle",
+                "title": "is Default Value",
+                "value": true
+            }
+        ]
+    },
+    {
+        "Title": "Y - Axis",
+        "Fields": [
+            {
+                "id": "label_enabled",
+                "type": "toggle",
+                "value": false,
+                "title": "Enabled"
+            },
+            {
+                "id": "label_fontColor",
+                "type": "color",
+                "value": "#FFFFFF",
+                "title": "Font Color"
+            },
+            {
+                "id": "label_fontSize",
+                "type": "number",
+                "title": "Font Size",
+                "value": null
+            },
+            {
+                "id": "label_display_type",
+                "type": "selector",
+                "options": [
+                    {
+                        "option_value": "auto"
+                    },
+                    {
+                        "option_value": "manual"
+                    }
+                ],
+                "title": "Display"
+            },
+            {
+                "id": "label_density_type",
+                "type": "selector",
+                "value": null,
+                "options": [
+                    {
+                        "option_value": "all"
+                    },
+                    {
+                        "option_value": "none"
+                    }
+                ],
+                "title": "Density"
+            },
+            {
+                "id": "label_step",
+                "type": "number",
+                "title": "Step",
+                "value": null
+            },
+            {
+                "id": "label_rotation",
+                "type": "slider",
+                "title": "Rotation",
+                "minValue": 0,
+                "maxValue": 360,
+                "value": 0
+            },
+            {
+                "id": "label_interval",
+                "type": "number",
+                "title": "Interval",
+                "value": null
+            },
+            {
+                "id": "label_wordWrap",
+                "type": "toggle",
+                "title": "Word Wrap",
+                "value": true
+            },
+            {
+                "id": "label_maxHeight",
+                "type": "number",
+                "title": "Max-Height",
+                "value": null
+            },
+            {
+                "id": "label_maxWidth",
+                "type": "number",
+                "title": "Max-Width",
+                "value": null
+            },
+            {
+                "id": "label_padding",
+                "type": "number",
+                "title": "Padding",
+                "value": null
+            },
+            {
+                "id": "label_offset",
+                "type": "number",
+                "title": "Offset",
+                "value": null
+            },
+            {
+                "id": "title_enabled",
+                "type": "toggle",
+                "title": "Enabled",
+                "value": false
+            },
+            {
+                "id": "title_fontColor",
+                "type": "color",
+                "title": "Font-Color",
+                "value": "#FFFFFF"
+            },
+            {
+                "id": "title_fontSize",
+                "type": "number",
+                "title": "Font-Size",
+                "value": null
+            },
+            {
+                "id": "title_text",
+                "type": "text",
+                "title": "Text",
+                "value": null
+            },
+            {
+                "id": "categoryWidth",
+                "type": "selector",
+                "value": null,
+                "options": [
+                    {
+                        "option_value": "auto"
+                    },
+                    {
+                        "option_value": "fill"
+                    },
+                    {
+                        "option_value": "cover"
+                    }
+                ],
+                "title": "Category Width"
+            },
+            {
+                "id": "innerPadding",
+                "type": "number",
+                "title": "Inner Padding",
+                "value": 30
+            },
+            {
+                "id": "maxHeight",
+                "type": "number",
+                "title": "Max-Height",
+                "value": null
+            },
+            {
+                "id": "minWidth",
+                "type": "number",
+                "title": "Min-Width",
+                "value": null
+            },
+            {
+                "id": "axisLineWidth",
+                "type": "number",
+                "title": "Axis-Line-Width",
+                "value": null
             },
             {
                 "id": "maxCategoryCount",

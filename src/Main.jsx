@@ -4,15 +4,14 @@ import { useState, useEffect } from 'react'
 import formJSON from './dataJson.json'
 import Element from './Element'
 import { FormContext } from './FormContext'
+import Accordion from './Accodian/Accordion'
 
-const Main = () => {
-    const [element, setElements] = useState(null)
-    useEffect(() => {
-        setElements(formJSON[0])
-    }, [])
-    const { Fields, Title } = element ?? {}
+const Main = ({ sourceData, setElements, Element, indexValue }) => {
+
+
+    const { Fields, Title } = sourceData ?? {}
     const handleChange = (ide, event) => {
-        const newElement = { ...element }
+        const newElement = { ...sourceData }
         newElement.Fields.forEach(field => {
             const { id, value, type } = field;
             if (ide === id) {
@@ -25,30 +24,15 @@ const Main = () => {
                         break
                 }
             }
-            setElements(newElement)
         });
-    }
-    function download(content, fileName, contentType) {
-        const a = document.createElement("a");
-        const file = new Blob([content], { type: contentType });
-        a.href = URL.createObjectURL(file);
-        a.download = fileName;
-        a.click();
+        setElements({ ...Element })
     }
 
-    function onDownload() {
-        download(JSON.stringify([element]), "Group-A-Theme-configuraition.json", "text/plain");
-    }
     return (
         <FormContext.Provider value={{ handleChange }}>
-            <Card maxWidth='max-w-3xl' >
-                <div style={{ backgroundColor: 'powderblue', padding: '2rem', borderRadius: '0.7em' }}>
-                    <h2 style={{ textAlign: 'center' }}>{Title}</h2>
-                    {Fields ? Fields.map((field, i) => <Element key={i} field={field} />) : null}
-                    <button onClick={onDownload}> <h3>Download theme</h3></button>
-                </div>
-            </Card>
-
+            <div style={{ backgroundColor: 'powderblue', padding: '1rem', marginBottom: '3px' }}>
+                <Accordion title={Title} content={Fields} />
+            </div>
         </FormContext.Provider>
     )
 }

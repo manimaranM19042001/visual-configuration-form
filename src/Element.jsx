@@ -6,6 +6,7 @@ import SelectorComponent  from './Components/Element/SelectorComponent'
 import { RangeComponent } from './Components/Element/SliderRange'
 import { TextBoxComponent } from './Components/Element/TextBoxComponent'
 import { ToggleBasicExample } from './Components/Element/Toggle'
+import MainComponent from './MainComponent'
 
 const Element = ({ field: { type, title, value, options, id, minValue, maxValue } }) => {
   switch (type) {

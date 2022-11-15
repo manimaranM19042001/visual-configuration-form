@@ -4,16 +4,14 @@ select {
     border-style: groove;
     text-align: center;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.8em;
     background-color: white;
     padding: 2px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.564);
     border-radius: 0.3em;
     margin-top: 10px;
 }
-h5{
-    /* margin-bottom: 15px; */
-}
+
 option {
     width: auto;
     border-style: groove;

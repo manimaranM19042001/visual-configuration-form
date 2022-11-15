@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import Element from '../Element';
-import fromJSON from "../dataJson.json"
+import { useState } from 'react';
+import Element from '../MainFunction/Element';
 import './Accordian.css'
 const Accordion = ({ title, content }:any) => {
     const [isActive, setIsActive] = useState(false);

@@ -1,108 +1,116 @@
 [
     {
-        "Title": "X - Axis",
-        "Fields": [
+        "id": 1,
+        "title": "X - Axis",
+        "fields": [
             {
-                "id": "enabled",
+                "id": 2,
                 "type": "toggle",
-                "value": false,
+                "isChecked": true,
                 "title": "Enabled"
             },
             {
-                "Title": "Label",
-                "type": "Accordian",
-                "Fields": [
+                "id": 3,
+                "title": "Label",
+                "type": "accordian",
+                "fields": [
                     {
-                        "id": "enabled",
+                        "id": 4,
                         "type": "toggle",
-                        "value": false,
+                        "isChecked": false,
                         "title": "Enabled"
                     },
                     {
-                        "id": "fontColor",
+                        "id": 5,
                         "type": "color",
                         "value": "#FFFFFF",
                         "title": "Font Color"
                     },
                     {
-                        "id": "fontSize",
+                        "id": 6,
                         "type": "number",
                         "title": "Font Size",
                         "value": 3
                     },
                     {
-                        "id": "display_type",
-                        "type": "selector",
-                        "options": [
-                            {
-                                "option_value": "auto"
-                            },
-                            {
-                                "option_value": "manual"
-                            }
-                        ],
-                        "title": "Display"
-                    },
-                    {
-                        "id": "density_type",
-                        "type": "selector",
+                        "id": 7,
+                        "type": "dropDown",
                         "value": null,
+                        "title": "Display",
                         "options": [
                             {
-                                "option_value": "all"
+                                "key": "auto",
+                                "text": "Auto"
                             },
                             {
-                                "option_value": "none"
+                                "key": "manual",
+                                "text": "Manual"
                             }
-                        ],
-                        "title": "Density"
+                        ]
                     },
                     {
-                        "id": "step",
+                        "id": 8,
+                        "type": "dropDown",
+                        "value": null,
+                        "title": "Density",
+                        "options": [
+                            {
+                                "key": "all",
+                                "text": "All"
+                            },
+                            {
+                                "key": "none",
+                                "text": "None"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 9,
                         "type": "number",
                         "title": "Step",
                         "value": null
                     },
                     {
-                        "id": "rotation",
+                        "id": 10,
                         "type": "slider",
                         "title": "Rotation",
                         "minValue": 0,
                         "maxValue": 360,
+                        "step": 30,
                         "value": 0
                     },
                     {
-                        "id": "interval",
+                        "id": 11,
                         "type": "number",
                         "title": "Interval",
                         "value": null
                     },
                     {
-                        "id": "wordWrap",
+                        "id": 12,
                         "type": "toggle",
                         "title": "Word Wrap",
-                        "value": true
+                        "isChecked": true
                     },
                     {
-                        "id": "maxHeight",
+                        "id": 13,
                         "type": "number",
                         "title": "Max-Height",
                         "value": null
                     },
                     {
-                        "id": "maxWidth",
+                        "id": 14,
                         "type": "number",
                         "title": "Max-Width",
                         "value": null
                     },
                     {
-                        "id": "padding",
+                        "id": 15,
                         "type": "number",
                         "title": "Padding",
                         "value": null
                     },
                     {
-                        "id": "offset",
+                        "id": 16,
                         "type": "number",
                         "title": "Offset",
                         "value": null
@@ -110,29 +118,30 @@
                 ]
             },
             {
-                "Title": "Title",
-                "type": "Accordian",
-                "Fields": [
+                "id": 17,
+                "title": "Title",
+                "type": "accordian",
+                "fields": [
                     {
-                        "id": "enabled",
+                        "id": 18,
                         "type": "toggle",
-                        "value": false,
+                        "isChecked": false,
                         "title": "Enabled"
                     },
                     {
-                        "id": "fontColor",
+                        "id": 19,
                         "type": "color",
                         "value": "#FFFFFF",
                         "title": "Font Color"
                     },
                     {
-                        "id": "fontSize",
+                        "id": 20,
                         "type": "number",
                         "title": "Font Size",
                         "value": 3
                     },
                     {
-                        "id": "text",
+                        "id": 21,
                         "type": "text",
                         "title": "Text",
                         "value": null
@@ -140,63 +149,66 @@
                 ]
             },
             {
-                "id": "categoryWidth",
-                "type": "selector",
+                "id": 22,
+                "type": "dropDown",
                 "value": null,
                 "title": "Category Width",
                 "options": [
                     {
-                        "option_value": "auto"
+                        "key": "all",
+                        "text": "All"
                     },
                     {
-                        "option_value": "fill"
+                        "key": "fill",
+                        "text": "Fill"
                     },
                     {
-                        "option_value": "cover"
+                        "key": "cover",
+                        "text": "Cover"
                     }
                 ]
             },
             {
-                "id": "innerPadding",
+                "id": 23,
                 "type": "number",
                 "title": "Inner Padding",
                 "value": 30
             },
             {
-                "id": "maxHeight",
+                "id": 24,
                 "type": "number",
                 "title": "Max-Height",
                 "value": null
             },
             {
-                "id": "minWidth",
+                "id": 25,
                 "type": "number",
                 "title": "Min-Width",
                 "value": null
             },
             {
-                "id": "axisLineWidth",
+                "id": 26,
                 "type": "number",
                 "title": "Axis-Line-Width",
                 "value": null
             },
             {
-                "id": "maxCategoryCount",
+                "id": 27,
                 "type": "number",
                 "title": "Max-Category Count",
                 "value": null
             },
             {
-                "id": "offset",
+                "id": 28,
                 "type": "number",
                 "title": "Offset",
                 "value": null
             },
             {
-                "id": "isDefaultValue",
+                "id": 29,
                 "type": "toggle",
                 "title": "is Default Value",
-                "value": true
+                "isChecked": true
             }
         ]
     }

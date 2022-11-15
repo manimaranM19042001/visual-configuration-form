@@ -137,10 +137,7 @@
   },
   "annotationSettings": {
     "isOpen": false,
-    "position": [
-      0,
-      0
-    ],
+    "position": [0, 0],
     "target": "",
     "id": "",
     "isEdit": false,
@@ -652,10 +649,7 @@
     "isPercent": false,
     "topNPercent": 20,
     "othersLabel": "Other",
-    "labelSuffix": [
-      "category",
-      "itemsCount"
-    ],
+    "labelSuffix": ["category", "itemsCount"],
     "isDefaultValue": true,
     "isResetValue": false
   },
@@ -1665,10 +1659,7 @@
     "isPercent": false,
     "topNPercent": 20,
     "othersLabel": "Other",
-    "labelSuffix": [
-      "category",
-      "itemsCount"
-    ],
+    "labelSuffix": ["category", "itemsCount"],
     "isDefaultValue": true,
     "isResetValue": false
   },
@@ -1728,10 +1719,7 @@
     "isPercent": false,
     "topNPercent": 20,
     "othersLabel": "Other",
-    "labelSuffix": [
-      "category",
-      "itemsCount"
-    ],
+    "labelSuffix": ["category", "itemsCount"],
     "isDefaultValue": true,
     "isResetValue": false
   },
@@ -1890,10 +1878,7 @@
       "isPercent": false,
       "topNPercent": 20,
       "othersLabel": "Other",
-      "labelSuffix": [
-        "category",
-        "itemsCount"
-      ],
+      "labelSuffix": ["category", "itemsCount"],
       "isDefaultValue": true
     },
     "averagePanel": {
@@ -1933,10 +1918,10 @@
     "labels": []
   },
   "xAxis": {
-    "enabled": false,
+    "enabled": true,
     "label": {
       "enabled": true,
-      "fontColor": "#607E5C",
+      "fontColor": "#605E5C",
       "fontSize": null,
       "display": "auto",
       "density": "all",

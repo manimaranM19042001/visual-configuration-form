@@ -1,10 +1,14 @@
 import { Flex } from '@tremor/react'
 import { FC, ReactElement, useState } from 'react'
 import '../Styles/NumberComponent.css'
-import { FormContext } from '../../FormContext'
+import { FormContext } from '../../Contexts/FormContext'
 import { useContext } from 'react'
-
-export const NumberComponent: FC<any> = ({ title, id, value }): ReactElement => {
+interface INumber{
+    title : string,
+    value : number,
+    id : number
+}
+export const NumberComponent: FC<INumber> = ({ title, id, value }): ReactElement => {
     const { handleChange } = useContext<any>(FormContext)
     return (
         <Flex>

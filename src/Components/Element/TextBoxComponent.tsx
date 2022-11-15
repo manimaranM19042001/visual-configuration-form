@@ -1,10 +1,14 @@
 import { Flex } from '@tremor/react';
 import { FC, ReactElement, useState } from 'react';
 import '../Styles/TextBoxComponents.css'
-import { FormContext } from '../../FormContext'
+import { FormContext } from '../../Contexts/FormContext'
 import { useContext } from 'react'
-const defaultValueFromJson: string = 'auto'
-export const TextBoxComponent: FC<any> = ({ title, id, value }): ReactElement => {
+interface ITextBox{
+    title : string,
+    id : number,
+    value: string|number
+}
+export const TextBoxComponent: FC<ITextBox> = ({ title, id, value }): ReactElement => {
     const [soterState, setStoreState] = useState<string>('')
     const { handleChange } = useContext<any>(FormContext)
 

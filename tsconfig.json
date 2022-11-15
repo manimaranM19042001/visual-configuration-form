@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "../Extra/DropDown.tsx", "../Extra/Number.tsx", "../Extra/NumberInput.tsx", "../Extra/XAxisProperty.tsx", "src/Components/Slider.tsx", "../Extra/TextInput.tsx"  ]
+, "../Extra/DropDown.tsx", "../Extra/Number.tsx", "../Extra/NumberInput.tsx", "../Extra/XAxisProperty.tsx", "src/Components/Slider.tsx", "../Extra/TextInput.tsx", "../Extra/recursion", "../Extra/Component.tsx", "../Extra/LoopObj.tsx", "../Extra/InfiniteLoop.tsx"  ]
 }

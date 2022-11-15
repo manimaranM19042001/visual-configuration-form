@@ -1,10 +1,14 @@
 import { FC, ReactElement, useState } from 'react';
 import '../Styles/colorPicker.css'
 import { Flex } from "@tremor/react";
-import { FormContext } from '../../FormContext'
+import { FormContext } from '../../Contexts/FormContext'
 import { useContext } from 'react'
-
-export const ColorPickerComponent: FC<any> = ({ title, value, id }): ReactElement => {
+interface IColorPicker{
+    title : string,
+    value : string,
+    id : number
+}
+export const ColorPickerComponent: FC<IColorPicker> = ({ title, value, id }): ReactElement => {
     const { handleChange } = useContext<any>(FormContext)
 
     return (

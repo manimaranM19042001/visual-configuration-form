@@ -38,9 +38,7 @@ const Main = ({ sourceData, setElements, Element }: IMainElement) => {
 
     return (
         <FormContext.Provider value={{ handleChange }}>
-            <div className='division'>
                 <Accordion title={title} content={fields} />
-            </div>
         </FormContext.Provider>
     )
 }

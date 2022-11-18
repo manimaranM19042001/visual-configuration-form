@@ -11,7 +11,7 @@ interface INumber{
 export const NumberComponent: FC<INumber> = ({ title, id, value }): ReactElement => {
     const { handleChange } = useContext<any>(FormContext)
     return (
-        <Flex>
+        <Flex  justifyContent={"justify-evenly"}>
             <h5>{title}</h5>
             <input type="number" value={value} placeholder='Enter your value' onChange={event => handleChange(id, event)} />
         </Flex>

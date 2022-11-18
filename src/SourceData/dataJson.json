@@ -1,42 +1,1934 @@
 [
     {
         "id": 1,
-        "title": "X - Axis",
+        "title": "analytics",
+        "fields": [
+            {
+                "id": "analytics_1",
+                "title": "referenceLine",
+                "type": "accordian",
+                "fields": [
+                    {
+                        "id": "referenceLine_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enabled"
+                    },
+                    {
+                        "id": "referenceLine_2",
+                        "type": "text",
+                        "title": "id",
+                        "value": "default-average-line"
+                    },
+                    {
+                        "id": "referenceLine_3",
+                        "type": "text",
+                        "title": "title",
+                        "value": "Reference Line 1"
+                    },
+                    {
+                        "id": "referenceLine_4",
+                        "type": "dropDown",
+                        "value": "horizontal",
+                        "title": "orientation",
+                        "options": [
+                            {
+                                "key": "horizontal",
+                                "text": "Horizontal"
+                            },
+                            {
+                                "key": "vertical",
+                                "text": "Vertical"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceLine_5",
+                        "type": "dropDown",
+                        "value": "average",
+                        "title": "type",
+                        "options": [
+                            {
+                                "key": "zero",
+                                "text": "Zero"
+                            },
+                            {
+                                "key": "average",
+                                "text": "Average"
+                            },
+                            {
+                                "key": "min",
+                                "text": "Min"
+                            },
+                            {
+                                "key": "max",
+                                "text": "Max"
+                            },
+                            {
+                                "key": "stddev",
+                                "text": "Stddev"
+                            },
+                            {
+                                "key": "median",
+                                "text": "Median"
+                            },
+                            {
+                                "key": "percentile",
+                                "text": "Percentile"
+                            },
+                            {
+                                "key": "constant",
+                                "text": "Constant"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceLine_6",
+                        "type": "text",
+                        "title": "value",
+                        "value": "AC"
+                    },
+                    {
+                        "id": "referenceLine_7",
+                        "type": "number",
+                        "title": "number",
+                        "value": 2
+                    },
+                    {
+                        "id": "referenceLine_8",
+                        "type": "number",
+                        "title": "constValue",
+                        "value": 6133
+                    },
+                    {
+                        "id": "referenceLine_9",
+                        "type": "number",
+                        "title": "percentile",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceLine_10",
+                        "type": "number",
+                        "title": "stddev",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceLine_11",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enableLineStyle"
+                    },
+                    {
+                        "id": "referenceLine_12",
+                        "type": "color",
+                        "value": "#999999",
+                        "title": "color"
+                    },
+                    {
+                        "id": "referenceLine_13",
+                        "type": "dropDown",
+                        "value": "dashed",
+                        "title": "lineStyle",
+                        "options": [
+                            {
+                                "key": "solid",
+                                "text": "Solid"
+                            },
+                            {
+                                "key": "dashed",
+                                "text": "Dashed"
+                            },
+                            {
+                                "key": "dotted",
+                                "text": "Dotted"
+                            },
+                            {
+                                "key": "dashedline",
+                                "text": "Dashedline"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceLine_13",
+                        "type": "slider",
+                        "title": "lineWidth",
+                        "minValue": 1,
+                        "maxValue": 20,
+                        "step": 1,
+                        "value": null
+                    },
+                    {
+                        "id": "referenceLine_14",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enableText"
+                    },
+                    {
+                        "id": "referenceLine_15",
+                        "type": "text",
+                        "title": "textType",
+                        "value": "both"
+                    },
+                    {
+                        "id": "referenceLine_16",
+                        "type": "color",
+                        "value": "#6B2328",
+                        "title": "textColor"
+                    },
+                    {
+                        "id": "referenceLine_17",
+                        "type": "slider",
+                        "title": "textSize",
+                        "minValue": 1,
+                        "maxValue": 20,
+                        "step": 1,
+                        "value": null
+                    },
+                    {
+                        "id": "referenceLine_18",
+                        "type": "dropDown",
+                        "value": "normal",
+                        "title": "textStyle",
+                        "options": [
+                            {
+                                "key": "normal",
+                                "text": "Normal"
+                            },
+                            {
+                                "key": "bold",
+                                "text": "Bold"
+                            },
+                            {
+                                "key": "400",
+                                "text": "400"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceLine_19",
+                        "type": "dropDown",
+                        "value": "Avg",
+                        "title": "labelText",
+                        "options": [
+                            {
+                                "key": "Avg",
+                                "text": "Average"
+                            },
+                            {
+                                "key": "none",
+                                "text": "None"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceLine_20",
+                        "type": "number",
+                        "title": "labelXPosition",
+                        "value": 0
+                    },
+                    {
+                        "id": "referenceLine_21",
+                        "type": "number",
+                        "title": "labelYPosition",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceLine_22",
+                        "type": "slider",
+                        "title": "rotation",
+                        "minValue": 0,
+                        "maxValue": 360,
+                        "step": 30,
+                        "value": 0
+                    },
+                    {
+                        "id": "referenceLine_23",
+                        "type": "dropDown",
+                        "value": "infront",
+                        "title": "placement",
+                        "options": [
+                            {
+                                "key": "behind",
+                                "text": "Behind"
+                            },
+                            {
+                                "key": "infront",
+                                "text": "Infront"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceLine_24",
+                        "type": "toggle",
+                        "isChecked": false,
+                        "title": "applyToBar"
+                    },
+                    {
+                        "id": "referenceLine_25",
+                        "type": "color",
+                        "value": "#6B2328",
+                        "title": "barColor"
+                    }
+                ]
+            },
+            {
+                "id": "analytics_2",
+                "title": "referenceBand",
+                "type": "accordian",
+                "fields": [
+                    {
+                        "id": "referenceBand_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enabled"
+                    },
+                    {
+                        "id": "referenceBand_2",
+                        "type": "text",
+                        "title": "id",
+                        "value": "default-average-line"
+                    },
+                    {
+                        "id": "referenceBand_3",
+                        "type": "text",
+                        "title": "title",
+                        "value": "Reference Line 1"
+                    },
+                    {
+                        "id": "referenceBand_4",
+                        "type": "dropDown",
+                        "value": "horizontal",
+                        "title": "orientation",
+                        "options": [
+                            {
+                                "key": "horizontal",
+                                "text": "Horizontal"
+                            },
+                            {
+                                "key": "vertical",
+                                "text": "Vertical"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceBand_5",
+                        "type": "dropDown",
+                        "value": "max",
+                        "title": "startAt",
+                        "options": [
+                            {
+                                "key": "zero",
+                                "text": "Zero"
+                            },
+                            {
+                                "key": "average",
+                                "text": "Average"
+                            },
+                            {
+                                "key": "min",
+                                "text": "Min"
+                            },
+                            {
+                                "key": "max",
+                                "text": "Max"
+                            },
+                            {
+                                "key": "stddev",
+                                "text": "Stddev"
+                            },
+                            {
+                                "key": "median",
+                                "text": "Median"
+                            },
+                            {
+                                "key": "percentile",
+                                "text": "Percentile"
+                            },
+                            {
+                                "key": "constant",
+                                "text": "Constant"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceBand_6",
+                        "type": "text",
+                        "title": "startValue",
+                        "value": "AC"
+                    },
+                    {
+                        "id": "referenceBand_7",
+                        "type": "dropDown",
+                        "value": "max",
+                        "title": "endAt",
+                        "options": [
+                            {
+                                "key": "zero",
+                                "text": "Zero"
+                            },
+                            {
+                                "key": "average",
+                                "text": "Average"
+                            },
+                            {
+                                "key": "min",
+                                "text": "Min"
+                            },
+                            {
+                                "key": "max",
+                                "text": "Max"
+                            },
+                            {
+                                "key": "stddev",
+                                "text": "Stddev"
+                            },
+                            {
+                                "key": "median",
+                                "text": "Median"
+                            },
+                            {
+                                "key": "percentile",
+                                "text": "Percentile"
+                            },
+                            {
+                                "key": "constant",
+                                "text": "Constant"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceBand_8",
+                        "type": "text",
+                        "title": "endValue",
+                        "value": "AC"
+                    },
+                    {
+                        "id": "referenceBand_9",
+                        "type": "color",
+                        "value": "#999999",
+                        "title": "color"
+                    },
+                    {
+                        "id": "referenceBand_10",
+                        "type": "color",
+                        "value": "#6B2328",
+                        "title": "textColor"
+                    },
+                    {
+                        "id": "referenceBand_11",
+                        "type": "dropDown",
+                        "value": "first",
+                        "title": "applyTo",
+                        "options": [
+                            {
+                                "key": "first",
+                                "text": "First"
+                            },
+                            {
+                                "key": "last",
+                                "text": "Last"
+                            },
+                            {
+                                "key": "range",
+                                "text": "Range"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceBand_12",
+                        "type": "number",
+                        "title": "applyToStart",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_13",
+                        "type": "number",
+                        "title": "applyToEnd",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_14",
+                        "type": "number",
+                        "title": "startNumber",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_15",
+                        "type": "number",
+                        "title": "endNumber",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_16",
+                        "type": "number",
+                        "title": "startPercentile",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_17",
+                        "type": "number",
+                        "title": "endPercentile",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_18",
+                        "type": "number",
+                        "title": "startStdFactor",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_19",
+                        "type": "number",
+                        "title": "endStdFactor",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_20",
+                        "type": "text",
+                        "title": "labelText",
+                        "value": "Label Text"
+                    },
+                    {
+                        "id": "referenceBand_21",
+                        "type": "number",
+                        "title": "labelXPosition",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_22",
+                        "type": "number",
+                        "title": "labelYPosition",
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_23",
+                        "type": "dropDown",
+                        "value": "infront",
+                        "title": "placement",
+                        "options": [
+                            {
+                                "key": "behind",
+                                "text": "Behind"
+                            },
+                            {
+                                "key": "infront",
+                                "text": "Infront"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceBand_24",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enableText"
+                    },
+                    {
+                        "id": "referenceBand_25",
+                        "type": "dropDown",
+                        "value": "dashed",
+                        "title": "lineStyle",
+                        "options": [
+                            {
+                                "key": "solid",
+                                "text": "Solid"
+                            },
+                            {
+                                "key": "dashed",
+                                "text": "Dashed"
+                            },
+                            {
+                                "key": "dotted",
+                                "text": "Dotted"
+                            },
+                            {
+                                "key": "dashedline",
+                                "text": "Dashedline"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceBand_26",
+                        "type": "slider",
+                        "title": "lineWidth",
+                        "minValue": 1,
+                        "maxValue": 20,
+                        "step": 1,
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_27",
+                        "type": "color",
+                        "value": "#FF0000",
+                        "title": "lineColor"
+                    },
+                    {
+                        "id": "referenceBand_28",
+                        "type": "slider",
+                        "title": "textSize",
+                        "minValue": 1,
+                        "maxValue": 20,
+                        "step": 1,
+                        "value": null
+                    },
+                    {
+                        "id": "referenceBand_29",
+                        "type": "dropDown",
+                        "value": "normal",
+                        "title": "textStyle",
+                        "options": [
+                            {
+                                "key": "normal",
+                                "text": "Normal"
+                            },
+                            {
+                                "key": "bold",
+                                "text": "Bold"
+                            },
+                            {
+                                "key": "400",
+                                "text": "400"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "referenceBand_30",
+                        "type": "text",
+                        "title": "textType",
+                        "value": "both"
+                    }
+                ]
+            },
+            {
+                "id": "analytics_3",
+                "title": "errorBar",
+                "type": "accordian",
+                "fields": [
+                    {
+                        "id": "errorBar_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enabled"
+                    },
+                    {
+                        "id": "errorBar_2",
+                        "type": "dropDown",
+                        "value": "percentage",
+                        "title": "type",
+                        "options": [
+                            {
+                                "key": "percentage",
+                                "text": "Percentage"
+                            },
+                            {
+                                "key": "fixed",
+                                "text": "Fixed"
+                            },
+                            {
+                                "key": "standardDeviation",
+                                "text": "StandardDeviation"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "errorBar_3",
+                        "type": "dropDown",
+                        "value": "plusMinus",
+                        "title": "direction",
+                        "options": [
+                            {
+                                "key": "plus",
+                                "text": "Plus"
+                            },
+                            {
+                                "key": "minus",
+                                "text": "Minus"
+                            },
+                            {
+                                "key": "plusMinus",
+                                "text": "PlusMinus"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "errorBar_4",
+                        "type": "number",
+                        "title": "value",
+                        "value": 5
+                    },
+                    {
+                        "id": "errorBar_5",
+                        "type": "number",
+                        "title": "standardDeviation",
+                        "value": 1
+                    },
+                    {
+                        "id": "errorBar_6",
+                        "type": "color",
+                        "value": "#C21111",
+                        "title": "stemColor"
+                    },
+                    {
+                        "id": "errorBar_7",
+                        "type": "number",
+                        "title": "whiskerLength",
+                        "value": 50
+                    },
+                    {
+                        "id": "errorBar_8",
+                        "type": "toggle",
+                        "isChecked": false,
+                        "title": "enableDatalabel"
+                    },
+                    {
+                        "id": "errorBar_9",
+                        "type": "slider",
+                        "title": "dataLabelFontSize",
+                        "minValue": 1,
+                        "maxValue": 20,
+                        "step": 1,
+                        "value": null
+                    },
+                    {
+                        "id": "errorBar_10",
+                        "type": "color",
+                        "value": "#000000",
+                        "title": "dataLabelColor"
+                    },
+                    {
+                        "id": "errorBar_11",
+                        "type": "text",
+                        "title": "measure",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Annotation",
+        "fields": [
+            {
+                "id": "annotation_1",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "Show"
+            },
+            {
+                "id": "annotation_2",
+                "type": "dropDown",
+                "value": null,
+                "title": "displayAnnotations",
+                "options": [
+                    {
+                        "key": "create",
+                        "text": "Create"
+                    },
+                    {
+                        "key": "hide",
+                        "text": "Hide"
+                    },
+                    {
+                        "key": "view",
+                        "text": "View"
+                    }
+                ]
+            },
+            {
+                "id": "annotation_3",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "autoFit"
+            },
+            {
+                "id": "annotation_4",
+                "type": "dropDown",
+                "value": null,
+                "title": "indicatorPosition",
+                "options": [
+                    {
+                        "key": "default",
+                        "text": "Default"
+                    }
+                ]
+            },
+            {
+                "id": "annotation_5",
+                "type": "color",
+                "value": "#e5e5e5",
+                "title": "iconColor"
+            },
+            {
+                "id": "annotation_6",
+                "type": "number",
+                "title": "indicatorNumber",
+                "value": null
+            },
+            {
+                "id": "annotation_7",
+                "type": "number",
+                "title": "footNoteHeight",
+                "value": null
+            },
+            {
+                "id": "annotation_8",
+                "type": "number",
+                "title": "footNoteColumn",
+                "value": null
+            },
+            {
+                "id": "annotation_9",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "showTimestamp"
+            },
+            {
+                "id": "annotation_10",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "showUsername"
+            },
+            {
+                "id": "annotation_11",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "enableReply"
+            },
+            {
+                "id": "annotation_12",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "showFootnote"
+            },
+            {
+                "id": "annotation_13",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "defaultReference"
+            },
+            {
+                "id": "annotation_14",
+                "type": "dropDown",
+                "value": null,
+                "title": "displayAnnotationAs",
+                "options": [
+                    {
+                        "key": "marketText",
+                        "text": "Marker Text"
+                    }
+                ]
+            },
+            {
+                "id": "annotation_15",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "Create Annotation"
+            },
+            {
+                "id": "annotation_16",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "applyToAll"
+            },
+            {
+                "id": "annotation_17",
+                "type": "dropDown",
+                "value": null,
+                "title": "stroke",
+                "options": [
+                    {
+                        "key": "solid",
+                        "text": "Solid"
+                    }
+                ]
+            },
+            {
+                "id": "annotation_18",
+                "type": "dropDown",
+                "value": null,
+                "title": "end",
+                "options": [
+                    {
+                        "key": "openArrow",
+                        "text": "Open Arrow"
+                    }
+                ]
+            },
+            {
+                "id": "annotation_19",
+                "type": "color",
+                "value": "#e5e5e5",
+                "title": "arrowColor"
+            },
+            {
+                "id": "annotation_20",
+                "type": "number",
+                "title": "arrowWidth",
+                "value": 1
+            },
+            {
+                "id": "annotation_21",
+                "type": "color",
+                "value": "#e5e5e5",
+                "title": "borderColor"
+            },
+            {
+                "id": "annotation_22",
+                "type": "number",
+                "title": "borderWidth",
+                "value": 1
+            },
+            {
+                "id": "annotation_23",
+                "type": "dropDown",
+                "value": null,
+                "title": "borderStyle",
+                "options": [
+                    {
+                        "key": "none",
+                        "text": "none"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "breakDownRanking",
+        "fields": [
+            {
+                "id": "breakDownRanking_1",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "enabled"
+            },
+            {
+                "id": "breakDownRanking_2",
+                "type": "dropDown",
+                "value": null,
+                "title": "type",
+                "options": [
+                    {
+                        "key": "off",
+                        "text": "off"
+                    },
+                    {
+                        "key": "top",
+                        "text": "top"
+                    },
+                    {
+                        "key": "bottom",
+                        "text": "bottom"
+                    },
+                    {
+                        "key": "both",
+                        "text": "both"
+                    }
+                ]
+            },
+            {
+                "id": "breakDownRanking_3",
+                "type": "number",
+                "title": "noOfItems",
+                "value": 5
+            },
+            {
+                "id": "breakDownRanking_4",
+                "type": "dropDown",
+                "value": null,
+                "title": "filterBy",
+                "options": [
+                    {
+                        "key": "variance",
+                        "text": "variance"
+                    }
+                ]
+            },
+            {
+                "id": "breakDownRanking_5",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "showOthers"
+            },
+            {
+                "id": "breakDownRanking_6",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "isPercent"
+            },
+            {
+                "id": "breakDownRanking_7",
+                "type": "number",
+                "title": "topNPercent",
+                "value": null
+            },
+            {
+                "id": "breakDownRanking_8",
+                "type": "dropDown",
+                "value": null,
+                "title": "othersLabel",
+                "options": [
+                    {
+                        "key": "other",
+                        "text": "other"
+                    }
+                ]
+            },
+            {
+                "id": "breakDownRanking_9",
+                "type": "dropDown",
+                "value": null,
+                "title": "labelSuffix",
+                "options": [
+                    {
+                        "key": "category , itemsCount",
+                        "text": "category , itemsCount"
+                    }
+                ]
+            },
+            {
+                "id": "breakDownRanking_10",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "isDefaultValue"
+            },
+            {
+                "id": "breakDownRanking_11",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "isResetValue"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "breakDownSorting",
+        "fields": [
+            {
+                "id": "breakDownSorting_1",
+                "type": "dropDown",
+                "value": null,
+                "title": "sortBy",
+                "options": [
+                    {
+                        "key": "panelSize",
+                        "text": "panelSize"
+                    },
+                    {
+                        "key": "variance",
+                        "text": "variance"
+                    }
+                ]
+            },
+            {
+                "id": "breakDownSorting_2",
+                "type": "dropDown",
+                "value": null,
+                "title": "sortType",
+                "options": [
+                    {
+                        "key": "ascending",
+                        "text": "ascending"
+                    },
+                    {
+                        "key": "descending",
+                        "text": "descending"
+                    },
+                    {
+                        "key": "reset",
+                        "text": "reset"
+                    }
+                ]
+            },
+            {
+                "id": "breakDownSorting_3",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "includeOtherInSort"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "chartCustomTitle",
+        "fields": [
+            {
+                "id": "chartCustomTitle_1",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "showTitle"
+            },
+            {
+                "id": "chartCustomTitle_2",
+                "type": "text",
+                "title": "customTitle",
+                "value": null
+            },
+            {
+                "id": "chartCustomTitle_3",
+                "type": "text",
+                "title": "formattedTitle",
+                "value": null
+            },
+            {
+                "id": "chartCustomTitle_4",
+                "type": "color",
+                "value": "#e5e5e5",
+                "title": "bgColor"
+            },
+            {
+                "id": "chartCustomTitle_5",
+                "type": "text",
+                "title": "alignment",
+                "value": null
+            },
+            {
+                "id": "chartCustomTitle_6",
+                "type": "number",
+                "title": "height",
+                "value": null
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "chartSettings",
+        "fields": [
+            {
+                "id": "chartSettings_1",
+                "type": "accordian",
+                "title": "valueDisplayConfig",
+                "fields": [
+                    {
+                        "id": "valueDisplayConfig_1",
+                        "type": "toggle",
+                        "isChecked": false,
+                        "title": "suppressNull"
+                    },
+                    {
+                        "id": "valueDisplayConfig_2",
+                        "type": "toggle",
+                        "isChecked": false,
+                        "title": "showPercentageSymbol"
+                    }
+                ]
+            },
+            {
+                "id": "chartSettings_2",
+                "type": "accordian",
+                "title": "smallMultiples",
+                "fields": [
+                    {
+                        "id": "smallMultiples_1",
+                        "type": "accordian",
+                        "title": "paginationControls",
+                        "fields": [
+                            {
+                                "id": "paginationControls_1",
+                                "type": "dropDown",
+                                "value": null,
+                                "title": "type",
+                                "options": [
+                                    {
+                                        "key": "simpled",
+                                        "text": "simpled"
+                                    },
+                                    {
+                                        "key": "detailed",
+                                        "text": "detailed"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "paginationControls_2",
+                                "type": "dropDown",
+                                "value": null,
+                                "title": "alignment",
+                                "options": [
+                                    {
+                                        "key": "left",
+                                        "text": "left"
+                                    },
+                                    {
+                                        "key": "right",
+                                        "text": "right"
+                                    },
+                                    {
+                                        "key": "center",
+                                        "text": "center"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "paginationControls_3",
+                                "type": "color",
+                                "value": "#e5e5e5",
+                                "title": "color"
+                            },
+                            {
+                                "id": "paginationControls_4",
+                                "type": "number",
+                                "title": "fontSize",
+                                "value": null
+                            },
+                            {
+                                "id": "paginationControls_5",
+                                "type": "text",
+                                "title": "panelText",
+                                "value": null
+                            },
+                            {
+                                "id": "paginationControls_6",
+                                "type": "text",
+                                "title": "pageText",
+                                "value": "Page"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "chartSettings_3",
+                "type": "accordian",
+                "title": "footer",
+                "fields": [
+                    {
+                        "id": "footer_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "hasValidLicense"
+                    },
+                    {
+                        "id": "footer_2",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "hasPropertiesUsed"
+                    }
+                ]
+            },
+            {
+                "id": "chartSettings_4",
+                "type": "accordian",
+                "title": "headers",
+                "fields": [
+                    {
+                        "id": "headers_1",
+                        "type": "toggle",
+                        "isChecked": false,
+                        "title": "measureBaseHeader"
+                    },
+                    {
+                        "id": "headers_2",
+                        "type": "dropDown",
+                        "value": null,
+                        "title": "headerVarianceStyle",
+                        "options": [
+                            {
+                                "key": "normal",
+                                "text": "normal"
+                            },
+                            {
+                                "key": "italic",
+                                "text": "italic"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "headers_3",
+                        "type": "toggle",
+                        "isChecked": false,
+                        "title": "fixedHeader"
+                    }
+                ]
+            },
+            {
+                "id": "chartSettings_5",
+                "title": "toolbar",
+                "type": "accordian",
+                "fields": [
+                    {
+                        "id": "toolbar_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "show"
+                    },
+                    {
+                        "id": "toolbar_2",
+                        "type": "dropDown",
+                        "value": null,
+                        "title": "toolbarView",
+                        "options": [
+                            {
+                                "key": "default",
+                                "text": "default"
+                            },
+                            {
+                                "key": "showOnHover",
+                                "text": "showOnHover"
+                            },
+                            {
+                                "key": "readingView",
+                                "text": "readingView"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "toolbar_3",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enable"
+                    },
+                    {
+                        "id": "toolbar_4",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "chartTypes"
+                    },
+                    {
+                        "id": "toolbar_5",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "display"
+                    },
+                    {
+                        "id": "toolbar_6",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "ranking"
+                    },
+                    {
+                        "id": "toolbar_7",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "sorting"
+                    },
+                    {
+                        "id": "toolbar_8",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "trellis"
+                    },
+                    {
+                        "id": "toolbar_9",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "deviation"
+                    },
+                    {
+                        "id": "toolbar_10",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "conditionalFormatting"
+                    },
+                    {
+                        "id": "toolbar_11",
+                        "type": "toggle",
+                        "isChecked": false,
+                        "title": "appearance"
+                    },
+                    {
+                        "id": "toolbar_12",
+                        "type": "toggle",
+                        "isChecked": false,
+                        "title": "dataLabel"
+                    },
+                    {
+                        "id": "toolbar_13",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "comments"
+                    },
+                    {
+                        "id": "toolbar_14",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "exportAsPDF"
+                    },
+                    {
+                        "id": "toolbar_15",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "analyticsView"
+                    }
+                ]
+            },
+            {
+                "id": "chartSettings_6",
+                "title": "highContrast",
+                "type": "accordian",
+                "fields": [
+                    {
+                        "id": "highContrast_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enabled"
+                    },
+                    {
+                        "id": "highContrast_2",
+                        "type": "text",
+                        "title": "foreground",
+                        "value": null
+                    },
+                    {
+                        "id": "highContrast_3",
+                        "type": "text",
+                        "title": "background",
+                        "value": null
+                    },
+                    {
+                        "id": "highContrast_4",
+                        "type": "text",
+                        "title": "foregroundSelected",
+                        "value": null
+                    },
+                    {
+                        "id": "highContrast_5",
+                        "type": "text",
+                        "title": "hyperlink",
+                        "value": null
+                    }
+                ]
+            },
+            {
+                "id": "chartSettings_7",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "templateChange"
+            },
+            {
+                "id": "chartSettings_8",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "showToolbar"
+            },
+            {
+                "id": "chartSettings_9",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "isFocusView"
+            },
+            {
+                "id": "chartSettings_10",
+                "type": "dropDown",
+                "value": null,
+                "title": "viewMode",
+                "options": [
+                    {
+                        "key": "view",
+                        "text": "view"
+                    },
+                    {
+                        "key": "edit",
+                        "text": "edit"
+                    },
+                    {
+                        "key": "inFocusEdit",
+                        "text": "inFocusEdit"
+                    }
+                ]
+            },
+            {
+                "id": "chartSettings_11",
+                "title": "buildDetails",
+                "type": "accordian",
+                "fields": [
+                    {
+                        "id": "buildDetails_1",
+                        "type": "text",
+                        "title": "buildDate",
+                        "value": null
+                    },
+                    {
+                        "id": "buildDetails_2",
+                        "type": "text",
+                        "title": "version",
+                        "value": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "legend",
+        "fields": [
+            {
+                "id": "legend_1",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "enabled"
+            },
+            {
+                "id": "legend_2",
+                "type": "dropDown",
+                "value": null,
+                "title": "layout",
+                "options": [
+                    {
+                        "key": "horizontal",
+                        "text": "horizontal"
+                    },
+                    {
+                        "key": "vertical",
+                        "text": "Vertical"
+                    }
+                ]
+            },
+            {
+                "id": "legend_3",
+                "type": "dropDown",
+                "value": null,
+                "title": "horizontalAlignment",
+                "options": [
+                    {
+                        "key": "left",
+                        "text": "left"
+                    },
+                    {
+                        "key": "center",
+                        "text": "center"
+                    },
+                    {
+                        "key": "right",
+                        "text": "right"
+                    }
+                ]
+            },
+            {
+                "id": "legend_4",
+                "type": "dropDown",
+                "value": null,
+                "title": "verticalAlignment",
+                "options": [
+                    {
+                        "key": "top",
+                        "text": "top"
+                    },
+                    {
+                        "key": "bottom",
+                        "text": "bottom"
+                    },
+                    {
+                        "key": "middle",
+                        "text": "middle"
+                    }
+                ]
+            },
+            {
+                "id": "legend_5",
+                "title": "label",
+                "type": "accordian",
+                "fields": [
+                    {
+                        "id": "label_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enabled"
+                    },
+                    {
+                        "id": "label_2",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "fontColor"
+                    },
+                    {
+                        "id": "label_3",
+                        "type": "number",
+                        "title": "fontSize",
+                        "value": null
+                    }
+                ]
+            },
+            {
+                "id": "legend_6",
+                "type": "accordian",
+                "title": "title",
+                "fields": [
+                    {
+                        "id": "title_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enabled"
+                    },
+                    {
+                        "id": "title_2",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "fontColor"
+                    },
+                    {
+                        "id": "title_3",
+                        "type": "number",
+                        "title": "fontSize",
+                        "value": null
+                    },
+                    {
+                        "id": "title_4",
+                        "type": "text",
+                        "title": "text",
+                        "value": null
+                    }
+                ]
+            },
+            {
+                "id": "legend_7",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "showIcon"
+            },
+            {
+                "id": "legend_8",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "rtl"
+            }
+        ]
+    },
+    {
+        "id": "ranking",
+        "title": "ranking",
+        "fields": [
+            {
+                "id": "ranking_1",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "enabled"
+            },
+            {
+                "id": "ranking_2",
+                "type": "dropDown",
+                "value": null,
+                "title": "type",
+                "options": [
+                    {
+                        "key": "off",
+                        "text": "off"
+                    },
+                    {
+                        "key": "top",
+                        "text": "top"
+                    },
+                    {
+                        "key": "bottom",
+                        "text": "bottom"
+                    },
+                    {
+                        "key": "both",
+                        "text": "both"
+                    }
+                ]
+            },
+            {
+                "id": "ranking_3",
+                "type": "number",
+                "title": "noOfItems",
+                "value": null
+            },
+            {
+                "id": "ranking_4",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "isDefaultValue"
+            },
+            {
+                "id": "ranking_5",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "isResetValue"
+            },
+            {
+                "id": "ranking_6",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "showOthers"
+            },
+            {
+                "id": "ranking_7",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "customOthersColor"
+            },
+            {
+                "id": "ranking_8",
+                "type": "accordian",
+                "title": "othersColorConfig",
+                "fields": [
+                    {
+                        "id": "othesColorConfig_1",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "AC"
+                    },
+                    {
+                        "id": "othesColorConfig_2",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "PY"
+                    },
+                    {
+                        "id": "othesColorConfig_3",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "PL"
+                    },
+                    {
+                        "id": "othesColorConfig_4",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "FC"
+                    },
+                    {
+                        "id": "othesColorConfig_5",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "AC 1"
+                    },
+                    {
+                        "id": "othesColorConfig_6",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "AC 2"
+                    },
+                    {
+                        "id": "othesColorConfig_7",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "AC 3"
+                    },
+                    {
+                        "id": "othesColorConfig_8",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "AC 4"
+                    },
+                    {
+                        "id": "othesColorConfig_9",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "AC 5"
+                    }
+                ]
+            },
+            {
+                "id": "ranking_9",
+                "type": "text",
+                "title": "filterBy",
+                "value": null
+            },
+            {
+                "id": "ranking_10",
+                "type": "number",
+                "title": "topNPercent",
+                "value": null
+            },
+            {
+                "id": "ranking_11",
+                "type": "text",
+                "title": "othersLabel",
+                "value": null
+            },
+            {
+                "id": "ranking_12",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "lsPercent"
+            }
+        ]
+    },
+    {
+        "id": "sorting",
+        "title": "sorting",
+        "fields": [
+            {
+                "id": "sorting_1",
+                "type": "dropDown",
+                "value": null,
+                "title": "sortBy",
+                "options": [
+                    {
+                        "key": "panelSize",
+                        "text": "panelSize"
+                    },
+                    {
+                        "key": "variance",
+                        "text": "variance"
+                    }
+                ]
+            },
+            {
+                "id": "sorting_2",
+                "type": "dropDown",
+                "value": null,
+                "title": "sortType",
+                "options": [
+                    {
+                        "key": "ascending",
+                        "text": "ascending"
+                    },
+                    {
+                        "key": "descending",
+                        "text": "descending"
+                    },
+                    {
+                        "key": "reset",
+                        "text": "reset"
+                    }
+                ]
+            },
+            {
+                "id": "sorting_3",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "includeOtherInSort"
+            }
+        ]
+    },
+    {
+        "id": "stackRanking",
+        "title": "stackRanking",
+        "fields": [
+            {
+                "id": "stackRanking_1",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "enabled"
+            },
+            {
+                "id": "stackRanking_2",
+                "type": "dropDown",
+                "value": null,
+                "title": "type",
+                "options": [
+                    {
+                        "key": "off",
+                        "text": "off"
+                    },
+                    {
+                        "key": "top",
+                        "text": "top"
+                    },
+                    {
+                        "key": "bottom",
+                        "text": "bottom"
+                    },
+                    {
+                        "key": "both",
+                        "text": "both"
+                    }
+                ]
+            },
+            {
+                "id": "stackRanking_3",
+                "type": "number",
+                "title": "noOfItems",
+                "value": 5
+            },
+            {
+                "id": "stackRanking_4",
+                "type": "dropDown",
+                "value": null,
+                "title": "filterBy",
+                "options": [
+                    {
+                        "key": "variance",
+                        "text": "variance"
+                    }
+                ]
+            },
+            {
+                "id": "stackRanking_5",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "showOthers"
+            },
+            {
+                "id": "stackRanking_6",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "isPercent"
+            },
+            {
+                "id": "stackRanking_7",
+                "type": "number",
+                "title": "topNPercent",
+                "value": null
+            },
+            {
+                "id": "stackRanking_8",
+                "type": "dropDown",
+                "value": null,
+                "title": "othersLabel",
+                "options": [
+                    {
+                        "key": "other",
+                        "text": "other"
+                    }
+                ]
+            },
+            {
+                "id": "stackRanking_9",
+                "type": "dropDown",
+                "value": null,
+                "title": "labelSuffix",
+                "options": [
+                    {
+                        "key": "category , itemsCount",
+                        "text": "category , itemsCount"
+                    }
+                ]
+            },
+            {
+                "id": "stackRanking_10",
+                "type": "toggle",
+                "isChecked": true,
+                "title": "isDefaultValue"
+            },
+            {
+                "id": "stackRanking_11",
+                "type": "toggle",
+                "isChecked": false,
+                "title": "isResetValue"
+            }
+        ]
+    },
+    {
+        "id": "xAxis",
+        "title": "xAxis",
         "fields": [
             {
                 "id": 2,
                 "type": "toggle",
                 "isChecked": true,
-                "title": "Enabled"
+                "title": "enabled"
             },
             {
                 "id": 3,
-                "title": "Label",
+                "title": "label",
                 "type": "accordian",
                 "fields": [
                     {
                         "id": 4,
                         "type": "toggle",
                         "isChecked": false,
-                        "title": "Enabled"
+                        "title": "enabled"
                     },
                     {
                         "id": 5,
                         "type": "color",
-                        "value": "#FFFFFF",
-                        "title": "Font Color"
+                        "value": "#e5e5e5",
+                        "title": "fontColor"
                     },
                     {
                         "id": 6,
                         "type": "number",
-                        "title": "Font Size",
+                        "title": "fontSize",
                         "value": 3
                     },
                     {
                         "id": 7,
                         "type": "dropDown",
                         "value": null,
-                        "title": "Display",
+                        "title": "display",
                         "options": [
                             {
                                 "key": "auto",
@@ -52,7 +1944,7 @@
                         "id": 8,
                         "type": "dropDown",
                         "value": null,
-                        "title": "Density",
+                        "title": "density",
                         "options": [
                             {
                                 "key": "all",
@@ -67,13 +1959,13 @@
                     {
                         "id": 9,
                         "type": "number",
-                        "title": "Step",
+                        "title": "step",
                         "value": null
                     },
                     {
                         "id": 10,
                         "type": "slider",
-                        "title": "Rotation",
+                        "title": "rotation",
                         "minValue": 0,
                         "maxValue": 360,
                         "step": 30,
@@ -82,68 +1974,68 @@
                     {
                         "id": 11,
                         "type": "number",
-                        "title": "Interval",
+                        "title": "interval",
                         "value": null
                     },
                     {
                         "id": 12,
                         "type": "toggle",
-                        "title": "Word Wrap",
+                        "title": "wordWrap",
                         "isChecked": true
                     },
                     {
                         "id": 13,
                         "type": "number",
-                        "title": "Max-Height",
+                        "title": "maxHeight",
                         "value": null
                     },
                     {
                         "id": 14,
                         "type": "number",
-                        "title": "Max-Width",
+                        "title": "maxWidth",
                         "value": null
                     },
                     {
                         "id": 15,
                         "type": "number",
-                        "title": "Padding",
+                        "title": "padding",
                         "value": null
                     },
                     {
                         "id": 16,
                         "type": "number",
-                        "title": "Offset",
+                        "title": "offset",
                         "value": null
                     }
                 ]
             },
             {
                 "id": 17,
-                "title": "Title",
+                "title": "title",
                 "type": "accordian",
                 "fields": [
                     {
                         "id": 18,
                         "type": "toggle",
                         "isChecked": false,
-                        "title": "Enabled"
+                        "title": "enabled"
                     },
                     {
                         "id": 19,
                         "type": "color",
-                        "value": "#FFFFFF",
-                        "title": "Font Color"
+                        "value": "#e5e5e5",
+                        "title": "fontColor"
                     },
                     {
                         "id": 20,
                         "type": "number",
-                        "title": "Font Size",
+                        "title": "fontSize",
                         "value": 3
                     },
                     {
                         "id": 21,
                         "type": "text",
-                        "title": "Text",
+                        "title": "text",
                         "value": null
                     }
                 ]
@@ -152,7 +2044,7 @@
                 "id": 22,
                 "type": "dropDown",
                 "value": null,
-                "title": "Category Width",
+                "title": "categoryWidth",
                 "options": [
                     {
                         "key": "all",
@@ -171,44 +2063,280 @@
             {
                 "id": 23,
                 "type": "number",
-                "title": "Inner Padding",
+                "title": "innerPadding",
                 "value": 30
             },
             {
                 "id": 24,
                 "type": "number",
-                "title": "Max-Height",
+                "title": "maxHeight",
                 "value": null
             },
             {
                 "id": 25,
                 "type": "number",
-                "title": "Min-Width",
+                "title": "minWidth",
                 "value": null
             },
             {
                 "id": 26,
                 "type": "number",
-                "title": "Axis-Line-Width",
+                "title": "axisLineWidth",
                 "value": null
             },
             {
                 "id": 27,
                 "type": "number",
-                "title": "Max-Category Count",
+                "title": "maxCategoryCount",
                 "value": null
             },
             {
                 "id": 28,
                 "type": "number",
-                "title": "Offset",
+                "title": "offset",
                 "value": null
             },
             {
                 "id": 29,
                 "type": "toggle",
-                "title": "is Default Value",
+                "title": "isDefaultValue",
                 "isChecked": true
+            }
+        ]
+    },
+    {
+        "id": "yAxis",
+        "title": "yAxis",
+        "fields": [
+            {
+                "id": "yAxis_1",
+                "type": "toggle",
+                "title": "show",
+                "isChecked": true
+            },
+            {
+                "id": "yAxis_2",
+                "type": "toggle",
+                "title": "enabled",
+                "isChecked": true
+            },
+            {
+                "id": "yAxis_3",
+                "type": "accordian",
+                "title": "label",
+                "fields": [
+                    {
+                        "id": "label_1",
+                        "type": "toggle",
+                        "title": "enabled",
+                        "isChecked": true
+                    },
+                    {
+                        "id": "label_2",
+                        "type": "number",
+                        "title": "fontSize",
+                        "value": null
+                    },
+                    {
+                        "id": "label_3",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "fontColor"
+                    },
+                    {
+                        "id": "label_4",
+                        "type": "number",
+                        "title": "noOfDecimal",
+                        "value": null
+                    },
+                    {
+                        "id": "label_5",
+                        "type": "text",
+                        "title": "scalingFactor",
+                        "value": null
+                    }
+                ]
+            },
+            {
+                "id": "yAxis_4",
+                "title": "title",
+                "type": "accordian",
+                "fields": [
+                    {
+                        "id": "title_1",
+                        "type": "toggle",
+                        "title": "enabled",
+                        "isChecked": true
+                    },
+                    {
+                        "id": "title_2",
+                        "type": "number",
+                        "title": "fontSize",
+                        "value": null
+                    },
+                    {
+                        "id": "title_3",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "fontColor"
+                    },
+                    {
+                        "id": "title_4",
+                        "type": "text",
+                        "title": "text",
+                        "value": null
+                    }
+                ]
+            },
+            {
+                "id": "yAxis_5",
+                "type": "number",
+                "title": "lineWidth",
+                "value": null
+            },
+            {
+                "id": "yAxis_6",
+                "type": "color",
+                "value": "#e5e5e5",
+                "title": "lineColor"
+            },
+            {
+                "id": "yAxis_7",
+                "type": "number",
+                "title": "offset",
+                "value": null
+            },
+            {
+                "id": "yAxis_8",
+                "title": "customMinMax",
+                "fields": [
+                    {
+                        "id": "customMinMax_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enabled"
+                    },
+                    {
+                        "id": "customMinMax_2",
+                        "type": "number",
+                        "title": "customMin",
+                        "value": null
+                    },
+                    {
+                        "id": "customMinMax_3",
+                        "type": "number",
+                        "title": "customMax",
+                        "value": null
+                    }
+                ]
+            },
+            {
+                "id": "yAxis_9",
+                "type": "text",
+                "title": "scalingFactor",
+                "value": null
+            },
+            {
+                "id": "yAxis_10",
+                "type": "accordian",
+                "title": "gridLine",
+                "fields": [
+                    {
+                        "id": "gridLine_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enabled"
+                    },
+                    {
+                        "id": "gridLine_2",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "color"
+                    },
+                    {
+                        "id": "gridLine_3",
+                        "type": "number",
+                        "title": "width",
+                        "value": null
+                    },
+                    {
+                        "id": "gridLine_4",
+                        "type": "dropDown",
+                        "value": null,
+                        "title": "type",
+                        "options": [
+                            {
+                                "key": "solid",
+                                "text": "solid"
+                            },
+                            {
+                                "key": "dotted",
+                                "text": "dotted"
+                            },
+                            {
+                                "key": "dashed",
+                                "text": "dashed"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id" : "yAxis_11",
+                "title" : "scaleBand",
+                "type" : "accordian",
+                "fields" :[
+                    {
+                        "id": "scaleBand_1",
+                        "type": "toggle",
+                        "isChecked": true,
+                        "title": "enabled"
+                    },
+                    {
+                        "id": "scaleBand_2",
+                        "type": "color",
+                        "value": "#e5e5e5",
+                        "title": "color"
+                    },
+                    {
+                        "id": "scaleBand_3",
+                        "type": "number",
+                        "title": "fontSize",
+                        "value": null
+                    }
+                ]
+            },
+            {
+                "id": "yAxis_12",
+                "type": "dropDown",
+                "value": null,
+                "title": "display",
+                "options": [
+                    {
+                        "key": "off",
+                        "text": "off"
+                    },
+                    {
+                        "key": "yAxis",
+                        "text": "yAxis"
+                    },
+                    {
+                        "key": "scaleBand",
+                        "text": "scaleBand"
+                    }
+                ]
+            },
+            {
+                "id": "yAxis_13",
+                "type": "text",
+                "title": "prefix",
+                "value": null
+            },
+            {
+                "id": "yAxis_14",
+                "type": "text",
+                "title": "suffix",
+                "value": null
             }
         ]
     }

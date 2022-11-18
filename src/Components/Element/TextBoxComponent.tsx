@@ -13,7 +13,7 @@ export const TextBoxComponent: FC<ITextBox> = ({ title, id, value }): ReactEleme
     const { handleChange } = useContext<any>(FormContext)
 
     return (
-        <Flex>
+        <Flex justifyContent={"justify-evenly"}>
             <h5>{title}</h5>
             <input type="text" minLength={2} maxLength={8} value={value} onChange={(event) => handleChange(id, event)} />
         </Flex>

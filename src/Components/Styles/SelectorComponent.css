@@ -1,10 +1,10 @@
 select {
-    width: 11.3rem;
+    width: 12rem;
     height: 30px;
     border-style: groove;
-    text-align: center;
+    text-align:center;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: .95rem;
     background-color: white;
     padding: 2px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.564);
@@ -16,7 +16,7 @@ option {
     width: auto;
     border-style: groove;
     text-align: left;
-    font-size: 1em;
+    font-size: 1rem;
     background-color: rgb(212, 236, 239);
     padding: 2px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.564);

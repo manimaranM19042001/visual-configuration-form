@@ -1,0 +1,20 @@
+.image-upload>input {
+  position: absolute;
+  top:4.5rem;
+  left:56.5rem;
+  right:0;
+  bottom:0;
+  width: 5rem;
+  opacity: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .image-upload>input {
+      position: absolute;
+        right: 0;
+        top: 7.4rem;
+        left: 0.6rem;
+        opacity: 0;
+    }
+  }
+  

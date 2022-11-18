@@ -1,28 +1,30 @@
-.container{
+.container {
     display: flex;
     gap: 1rem;
 }
-.numerBox{
+
+.numerBox {
     padding: 6.5px;
-    border-style:none;
+    border-style: none;
     border-radius: 0.3em;
-    box-shadow: inset 1px 1px 5px   rgb(8, 8, 8);
+    box-shadow: inset 1px 1px 5px rgb(8, 8, 8);
     border-width: 1.5px;
     background-color: #ffffff;
     /* border-color:none; */
-    height:auto;
-    min-width:2.69em;
+    height: auto;
+    min-width: 2.69em;
     text-align: center;
     line-height: 1rem;
     font-weight: bold;
-    font-size: 15px;
+    font-size: .95rem;
 }
+
 input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
     cursor: pointer;
-  }
+}
 
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
@@ -40,6 +42,10 @@ input[type="range"]::-webkit-slider-thumb {
     margin-top: -0.3rem;
     background-color: rgb(116, 104, 104);
     height: 1rem;
-    width: 1rem; 
+    width: 1rem;
     border-radius: 50%;
- }
+}
+
+input[type="range"]:hover {
+    background-color: rgb(106, 116, 104);
+}

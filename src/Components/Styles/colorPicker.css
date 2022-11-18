@@ -1,7 +1,7 @@
 .colorPicker {
     background-color: rgba(255, 255, 255, 0.559);
     height: 8vh;
-    width: 22.3vh;
+    width: 12rem;
     box-shadow: .5vh .5vh 1vh rgba(0, 0, 0, 0.385);
     border-radius: 0.5em;
 }
@@ -12,7 +12,7 @@
 .color {
     background-color: none;
     height: 5vh;
-    width: 22.3vh;    
+    width: 12rem;    
     border-radius: 0.5em;
     cursor: pointer;
 }
@@ -21,6 +21,6 @@
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 15px;
+    font-size: .95rem;
 }
 

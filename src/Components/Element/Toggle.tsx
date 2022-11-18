@@ -4,23 +4,21 @@ import { Toggle } from '@fluentui/react/lib/Toggle';
 import { Flex } from "@tremor/react";
 import '../Styles/ToggleCss.css'
 import { FormContext } from '../../Contexts/FormContext'
-import { useContext } from 'react'
+import { useContext, ReactElement, FC } from 'react'
 const stackTokens: IStackTokens = { childrenGap: 1 };
 
-interface IToggle{
-    isChecked : boolean,
-    id : number,
-    title : string
+interface IToggle {
+    isChecked: boolean,
+    id: number,
+    title: string
 }
 
-export const ToggleBasicExample: React.FunctionComponent<IToggle> = ({ isChecked, id, title }) => {
+export const ToggleBasicExample: FC<IToggle> = ({ isChecked, id, title }): ReactElement => {
     const { handleChange } = useContext<any>(FormContext)
     return (
         <Flex>
             <h5>{title}</h5>
-            <div className='toggleDiv'>
-                <Toggle defaultChecked={isChecked} onText='ON' offText='Off' className='classToggle' onChange={event => handleChange(id, event)} />
-            </div>
+            <Toggle defaultChecked={isChecked} className='classToggle' onChange={event => handleChange(id, event)} />
         </Flex>
     );
 };

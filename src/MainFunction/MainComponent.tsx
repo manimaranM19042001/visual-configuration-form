@@ -1,14 +1,19 @@
 import { Card } from '@tremor/react'
 import { useState, useEffect } from 'react'
 import { ContextValue } from '../Contexts/ContextValue'
+import { ISourceData } from '../EnumsInterfacesTypes/EnumsInterfacesTypes'
 import formJSON from '../SourceData/dataJson.json'
+import '../Accodian/Accordian.css'
 import Main from './Main'
+import * as Icons from '../../node_modules/heroicons-react/build/index'
+
 const MainComponent = () => {
-    const [element, setElements] = useState<any>({})
+
+    const [element, setElements] = useState<ISourceData[]>([])
     useEffect(() => {
         setElements(formJSON)
     }, [])
-    function download(content: any, fileName: string, contentType: any) {
+    function download(content: any, fileName: string, contentType: string) {
         const a = document.createElement("a");
         const file = new Blob([content], { type: contentType });
         a.href = URL.createObjectURL(file);
@@ -51,12 +56,16 @@ const MainComponent = () => {
     return (
         <ContextValue.Provider value={[element, setElements]}>
             <Card maxWidth="max-w-3xl" >
-                {
-                    formJSON.map((value, index) => (
-                        <Main sourceData={value} key={index} setElements={setElements} Element={element} />
-                    ))
-                }
-                <button onClick={onDownload}> <h3>Download theme</h3></button>
+                <>
+                    <div className="accordion-item">
+                        {
+                            formJSON.map((value, index) => (
+                                <Main sourceData={value} key={index} setElements={setElements} Element={element} />
+                            ))
+                        }
+                    </div><br />
+                    {/* <button onClick={onDownload}><p>Download file</p><Icons.InboxIn/></button> */}
+                </>
             </Card>
         </ContextValue.Provider>
     )

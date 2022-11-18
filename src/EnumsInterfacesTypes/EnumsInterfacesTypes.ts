@@ -6,7 +6,7 @@ export interface IOptionProps {
 }
 
 export interface ISourceData {
-    id?: number;
+    id?: number | string;
     title: string;
     type?: string;
     value?: string | number | null;
